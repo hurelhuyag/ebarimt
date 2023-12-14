@@ -21,6 +21,7 @@ import java.util.Map;
  * @param consumerNo Худалдан авагч иргэний ebarimt-ийн бүртгэлийн дугаар. 8 оронтой тоо
  * @param type Баримтын төрөл
  * @param inactiveId Баримтыг засвралах, эсвэл хэсэгчилэн буцаах тохиолдолд засварлах баримтын дугаарыг хавсаргана.
+ * @param invoiceId Өмнө нь үүсгэсэн нэхэмжилэхийн баримт бол нэхэмжилэхийн дугаарын оруулна.
  * @param reportMonth Баримт харьяалагдах тайлант сар
  * @param receipts Дэд төлбөрийн баримтууд
  * @param payments Төлбөрийн хэлбэр
@@ -37,6 +38,7 @@ public record CreateReceipt(
     @JsonFormat(shape = JsonFormat.Shape.STRING) Long consumerNo,
     Type type,
     String inactiveId,
+    String invoiceId,
     @JsonFormat(shape = JsonFormat.Shape.STRING) LocalDate reportMonth,
     List<Receipt> receipts,
     List<Payment> payments
@@ -78,6 +80,7 @@ public record CreateReceipt(
      * @param totalCityTax Дэд төлбөрийн баримтын НХАТ-н нийт дүн
      * @param taxType Татварын төрөл
      * @param merchantTin Борлуулагчийн ТТД. 11 эсвэл 14 оронтой бүхэл тоо
+     * @param bankAccountNo Нэхэмжилэх банкны дансны дугаар
      * @param data Дэд төлбөрийн баримтын нэмэлт өгөгдөл.
      * @param items Борлуулсан бүтээгдэхүүн, үйлчилгээний жагсаалт
      */
@@ -87,6 +90,7 @@ public record CreateReceipt(
         BigDecimal totalCityTax,
         VatType taxType,
         @JsonFormat(shape = JsonFormat.Shape.STRING) Long merchantTin,
+        String bankAccountNo,
         Map<String, Object> data,
         List<ReceiptItem> items
     ) {}
