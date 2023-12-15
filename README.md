@@ -1,6 +1,21 @@
 # Ebarimt.mn Client API model for OpenFeign
 
-## Usage
+# References
+
+- VAT Zero goods: https://developer.itc.gov.mn/assets/files/VAT-0-percent-goods.xlsx
+- VAT Free goods: https://developer.itc.gov.mn/assets/files/VAT-free-goods.xlsx
+- Classification Codes: https://ebarimt.mn/img/buteegdehuun%20uilchilgeenii%20negdsen%20angilal.pdf
+- District Codes: https://api.ebarimt.mn/api/info/check/getBranchInfo
+- Api Doc: https://developer.itc.gov.mn/assets/files/POS%20API%203.0.1.pdf
+
+# Install PosService
+
+```bash
+sudo apt install unzip ar tar xz-utils
+curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh | bash
+```
+
+## Api Usage
 
 pom.xml:
 ```xml
