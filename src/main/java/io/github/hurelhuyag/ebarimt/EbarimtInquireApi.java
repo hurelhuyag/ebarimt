@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name = "EbarimtInquireApi", url = "https://api.ebarimt.mn")
+@FeignClient(name = "EbarimtInquireApi", url = "https://api.ebarimt.mn", primary = false)
 public interface EbarimtInquireApi {
 
     @GetMapping("/api/info/check/getTinInfo?regNo={regNo}")

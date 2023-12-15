@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "EbarimtInfoApi", url = "https://info.ebarimt.mn/rest")
+@FeignClient(value = "EbarimtInfoApi", url = "https://info.ebarimt.mn/rest", primary = false)
 public interface EbarimtInfoApi {
 
     @GetMapping("/merchant/info")

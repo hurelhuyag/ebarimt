@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "EbarimtApi")
+@FeignClient(name = "EbarimtApi", primary = false)
 public interface EbarimtApi {
 
     @PostMapping("/rest/receipt")
