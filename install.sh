@@ -29,10 +29,13 @@ tar --xz -xf ./Package/linux/data.tar.xz -C ./Package/linux/
 
 sudo mkdir -p /opt/posapi
 sudo mkdir -p /etc/posapi
+sudo mkdir -p /var/log/ebarimt/
 
 sudo cp -fd ./Package/linux/usr/lib/* /usr/lib/
 sudo cp -f ./Package/linux/opt/posapi/PosService /opt/posapi/PosService
 sudo cp -f ./Package/linux/etc/posapi/posapi.ini /etc/posapi/posapi.ini
+sudo touch /var/log/ebarimt/posapi.log
+sudo chown ebarimt:admin -R /var/log/ebarimt
 
 sudo chown ebarimt:ebarimt -R /opt/posapi
 
@@ -51,6 +54,9 @@ WorkingDirectory = /opt/posapi
 ReadWritePaths = /opt/posapi
 ExecStart = /opt/posapi/PosService
 Restart = always
+RemainAfterExit = yes
+StandardOutput = append:/var/log/ebarimt/posapi.log
+StandardError  = append:/var/log/ebarimt/posapi.log
 
 [Install]
 WantedBy = multi-user.target
