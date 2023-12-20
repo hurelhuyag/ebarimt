@@ -31,12 +31,12 @@ sudo mkdir -p /opt/posapi
 sudo mkdir -p /etc/posapi
 sudo mkdir -p /var/log/ebarimt/
 
+sudo chmod 644 ./Package/linux/usr/lib/*
 sudo cp -fd ./Package/linux/usr/lib/* /usr/lib/
 sudo cp -f ./Package/linux/opt/posapi/PosService /opt/posapi/PosService
 sudo cp -f ./Package/linux/etc/posapi/posapi.ini /etc/posapi/posapi.ini
 sudo touch /var/log/ebarimt/posapi.log
-sudo chown ebarimt:admin -R /var/log/ebarimt
-
+sudo chown ebarimt:adm -R /var/log/ebarimt
 sudo chown ebarimt:ebarimt -R /opt/posapi
 
 SERVICE=$(cat <<-END
