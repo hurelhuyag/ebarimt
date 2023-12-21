@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.github.hurelhuyag</groupId>
     <artifactId>ebarimt</artifactId>
-    <version>3.0.1+0</version>
+    <version>3.0.1+1</version>
     <name>ebarimt</name>
     <description>API Models for Client for ebarimt.mn from Mongolian General Tax Office</description>
     <url>https://github.com/hurelhuyag/ebarimt</url>
