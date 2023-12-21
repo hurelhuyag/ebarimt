@@ -7,6 +7,7 @@
 - Classification Codes: https://ebarimt.mn/img/buteegdehuun%20uilchilgeenii%20negdsen%20angilal.pdf
 - District Codes: https://api.ebarimt.mn/api/info/check/getBranchInfo
 - Api Doc: https://developer.itc.gov.mn/assets/files/POS%20API%203.0.1.pdf
+- https://ebarimt.mn/img/vat/khylbarBurtgelService.pdf
 
 ## 2. Install PosService
 
