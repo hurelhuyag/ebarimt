@@ -9,7 +9,7 @@ import java.util.List;
 @FeignClient(name = "EbarimtInquireApi", url = "https://api.ebarimt.mn", primary = false)
 public interface EbarimtInquireApi {
 
-    @GetMapping("/api/info/check/getTinInfo?regNo={regNo}")
+    @GetMapping("/api/info/check/getTinInfo")
     TinInfo getTinInfo(@RequestParam String regNo);
 
     record TinInfo(
