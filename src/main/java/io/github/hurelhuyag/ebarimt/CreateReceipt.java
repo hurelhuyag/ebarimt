@@ -55,7 +55,7 @@ public record CreateReceipt(
         VAT_ABLE,
         VAT_FREE,
         VAT_ZERO,
-        NO_VAT,
+        NOT_VAT,
     }
 
     public enum BarCodeType {

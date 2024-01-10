@@ -51,7 +51,7 @@ curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh |
         <dependency>
             <groupId>io.github.hurelhuyag</groupId>
             <artifactId>ebarimt</artifactId>
-            <version>3.0.1+0</version>
+            <version>3.0.1+2</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
@@ -107,7 +107,7 @@ class SimpleOrderService implements OrderService {
             null,
             CreateReceipt.Type.B2C_RECEIPT,
             null,
-            LocalDate.now().minusMonths(1),
+            null,
             List.of(
                 new CreateReceipt.Receipt(
                     new BigDecimal("112.00"),
