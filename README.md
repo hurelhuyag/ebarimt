@@ -21,9 +21,15 @@
 ```bash
 sudo apt install unzip ar tar xz-utils
 ```
-Staging: `curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh | bash`
+Staging: 
+```
+curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh | bash
+```
 
-Prod: `curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh | bash -s -- --prod`
+Prod: 
+```
+curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh | bash -s -- --prod
+```
 
 ### 2.3 Configure PosService
 
