@@ -20,8 +20,10 @@
 
 ```bash
 sudo apt install unzip ar tar xz-utils
-curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh | bash
 ```
+Staging: `curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh | bash`
+
+Prod: `curl -s https://raw.githubusercontent.com/hurelhuyag/ebarimt/master/install.sh | bash -s -- --prod`
 
 ### 2.3 Configure PosService
 
@@ -119,7 +121,7 @@ class SimpleOrderService implements OrderService {
                     List.of(
                         new CreateReceipt.ReceiptItem(
                             "Хатуу чихэр",
-                            null,
+                            "UNDEFINED",
                             CreateReceipt.BarCodeType.UNDEFINED,
                             2352010L,
                             null,
