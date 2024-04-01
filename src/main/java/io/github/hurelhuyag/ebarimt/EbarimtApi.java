@@ -21,5 +21,5 @@ public interface EbarimtApi {
     PosApiInfo info();
 
     @GetMapping("/rest/bankAccounts")
-    List<BankAccount> bankAccounts(@RequestParam String tin);
+    List<BankAccount> bankAccounts(@RequestParam Long tin);
 }

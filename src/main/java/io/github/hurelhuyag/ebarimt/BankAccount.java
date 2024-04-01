@@ -2,7 +2,7 @@ package io.github.hurelhuyag.ebarimt;
 
 public record BankAccount(
     Integer id,
-    String tin,
+    Long tin,
     String bankAccountNo,
     String bankAccountName,
     Integer bankId,

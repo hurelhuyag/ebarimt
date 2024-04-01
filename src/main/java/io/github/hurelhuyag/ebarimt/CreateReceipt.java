@@ -67,6 +67,7 @@ public record CreateReceipt(
     public enum PaymentCode {
         CASH,
         PAYMENT_CARD,
+        BANK_TRANSFER
     }
 
     public enum PaymentStatus {
