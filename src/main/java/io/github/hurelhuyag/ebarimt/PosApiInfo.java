@@ -11,9 +11,11 @@ public record PosApiInfo(
     Long operatorTIN,
     String posId,
     Integer posNo,
+    String version,
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss") LocalDateTime lastSentDate,
     Integer leftLotteries,
     AppInfo appInfo,
+    List<PaymentType> paymentTypes,
     List<Merchant> merchants
 ) {
 
@@ -25,15 +27,22 @@ public record PosApiInfo(
         String workDir
     ) {}
 
+    public record PaymentType(
+        String code,
+        String name
+    ) {}
+
     public record Merchant(
         String name,
         Long tin,
+        Boolean vatPayer,
         List<Customer> customers
     ) {
 
         public record Customer(
             String name,
-            Long tin
+            Long tin,
+            Boolean vatPayer
         ) {}
     }
 }
