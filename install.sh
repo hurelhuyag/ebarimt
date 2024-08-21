@@ -22,7 +22,7 @@ then
   FILE="PosService_3.0.9.zip"
 fi
 
-curl -o $FILE https://developer.itc.gov.mn/assets/files/$FILE
+curl -o $FILE https://share.itc.gov.mn/share/developer/$FILE
 unzip $FILE
 ar --output ./Package/linux/ -vx ./Package/linux/PosAPI.deb
 tar --xz -xf ./Package/linux/data.tar.xz -C ./Package/linux/
