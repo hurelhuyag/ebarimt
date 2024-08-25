@@ -2,12 +2,12 @@
 
 ## 1. References
 
-- VAT Zero goods: https://developer.itc.gov.mn/assets/files/VAT-0-percent-goods.xlsx
-- VAT Free goods: https://developer.itc.gov.mn/assets/files/VAT-free-goods.xlsx
-- Classification Codes: https://ebarimt.mn/img/buteegdehuun%20uilchilgeenii%20negdsen%20angilal.pdf
+- VAT Zero goods: https://share.itc.gov.mn/share/developer/vat%20zero.xlsx
+- VAT Free goods: https://share.itc.gov.mn/share/developer/vat%20free%20good.xlsx
+- Classification Codes: https://share.itc.gov.mn/share/developer/gs1_gs1.xlsx
 - District Codes: https://api.ebarimt.mn/api/info/check/getBranchInfo
-- Api Doc: https://developer.itc.gov.mn/assets/files/POS%20API%203.0.1.pdf
-- https://ebarimt.mn/img/vat/khylbarBurtgelService.pdf
+- Api Doc: https://share.itc.gov.mn/share/developer/POS%20API%203.0.1.pdf
+- https://share.itc.gov.mn/share/developer/combine.pdf
 
 ## 2. Install PosService
 
